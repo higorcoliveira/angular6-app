@@ -1,3 +1,13 @@
 <app-address-card [user]="user"></app-address-card>
 
 <!-- colchete para que a variável membro do componente seja avaliado -->
+
+<br/>
+<input type="text" [(ngModel)]="input">
+{{input}}
+<!-- forma de fazer two-way databind no angular2+ [()] -->
+<!-- colchete: dado vindo do controller para a view -->
+<!-- parenteses: dado vindo da view para o controller -->
+
+<!-- Componente de outro módulo -->
+<app-view-component></app-view-component>

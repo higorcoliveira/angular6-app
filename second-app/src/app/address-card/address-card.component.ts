@@ -9,8 +9,13 @@ import { User } from './user.model';
 export class AddressCardComponent implements OnInit {
 
   @Input('user') user: User; // atributo do componente
+  isCollapsed: boolean = true;
 
   constructor() {
+  }
+
+  toggleCollapse() {
+    this.isCollapsed = !this.isCollapsed;
   }
 
   // de acordo com o ciclo de vida, para o parametro ser calculado, é preciso ir no ngOnInit

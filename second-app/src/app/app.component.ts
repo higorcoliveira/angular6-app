@@ -9,6 +9,7 @@ import { User } from './address-card/user.model';
 export class AppComponent {
 
   user: User;
+  input = 'Initial value';
 
   constructor() { // constroi o objeto que será passado como parametro
     this.user = new User();

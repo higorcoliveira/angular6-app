@@ -1,8 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { AddressCardComponent } from './address-card/address-card.component';
+import { ViewModule } from './view/view.module';
+import { TestServiceService } from './test-service.service';
 
 @NgModule({
   declarations: [
@@ -10,9 +13,13 @@ import { AddressCardComponent } from './address-card/address-card.component';
     AddressCardComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule,  // importação do módulo para utilizar o ngForm,
+    ViewModule // importando módulo customizado
   ],
-  providers: [],
+  providers: [ // serviços utilizados
+    TestServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
