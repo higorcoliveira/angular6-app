@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AddressCardComponent } from './address-card/address-card.component';
@@ -15,7 +16,8 @@ import { TestServiceService } from './test-service.service';
   imports: [
     BrowserModule,
     FormsModule,  // importação do módulo para utilizar o ngForm,
-    ViewModule // importando módulo customizado
+    ViewModule, // importando módulo customizado
+    HttpClientModule
   ],
   providers: [ // serviços utilizados
     TestServiceService
