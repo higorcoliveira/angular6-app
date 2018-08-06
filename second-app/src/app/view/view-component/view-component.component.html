@@ -1,3 +1,7 @@
-<p>
-  view-component works!
-</p>
+<br><br>
+Username: <input type="text" [(ngModel)]="userName">
+<button (click)="search()">Search</button>
+<div *ngIf="response">
+  <p>Login: {{response.login}}</p>
+  <p>Repos: {{response.public_repos}}</p>  
+</div>
