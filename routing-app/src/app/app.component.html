@@ -1,3 +1,5 @@
-<router-outlet>
-  
+<h1>My App</h1>
+<a *ngFor="let route of routes" [routerLink]="route.url">{{route.linkName}}</a>
+<br/>
+<router-outlet> 
 </router-outlet> <!-- Diretiva de controle de routing -->

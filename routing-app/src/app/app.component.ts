@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'routing-app';
+
+  routes = [ // pegar dinamicamente as rotas com a diretiva ngFor
+    { linkName: 'Home', url: 'home' },
+    { linkName: 'Settings', url: 'settings' }
+  ];
 }
